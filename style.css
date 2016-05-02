@@ -1,0 +1,160 @@
+body {background: #fff; width: 100vw; height: 100vh; margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
+
+.btn-reset {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  border: 0px none;
+  border-bottom: 1vw solid #aaa;
+  border-left: 1vw solid #bbb;
+  border-radius: 0 0 0 60%;
+  background: #ccc;
+  font-size: 4vw;
+  color: #777;
+  padding: 1vw 2vw;
+  text-decoration: none;
+}
+
+.btn-undo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border: 0px none;
+  border-bottom: 1vw solid #aaa;
+  border-right: 1vw solid #bbb;
+  border-radius: 0 0 60% 0;
+  background: #ccc;
+  font-size: 4vw;
+  color: #777;
+  padding: 1vw 2vw;
+  text-decoration: none;
+}
+
+.btn-start {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  border: 0px none;
+  border-top: 1vw solid #aaa;
+  border-left: 1vw solid #bbb;
+  border-radius: 50% 60% 0 0;
+  background: #ccc;
+  font-size: 4vw;
+  color: #777;
+  padding: 1vw 2vw;
+  text-decoration: none;
+}
+
+.btn {
+  position: absolute;
+  width: 20vw;
+  border: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 4vw;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-text.blue {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.btn-text.red{
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.btn.red {
+  left: 0;
+  background: #b93c59;
+  border-right: 1vw solid #b32043;
+}
+
+.btn.blue {
+  right: 0;
+  background: #3c83ba;
+  border-left: 1vw solid #2075b7;
+}
+
+.foosball {
+  position: relative;
+  width: 100vw; height: 100vh; margin: 0; padding: 0;
+  background: url('foosball.png');
+  background-repeat: no-repeat;
+  background-position: 45vw 25vh;
+  background-size: auto 50vh;
+}
+
+.player {
+  position: absolute;
+  display: block;
+  border: 10px solid #ccc;
+  border-radius: 100%;
+  width: 15vh;
+  height: 15vh;
+  line-height: 15vh;
+  text-align: center;
+  font-size: 3vh;
+  transition: all 0.6s;
+}
+
+.player.red {
+  top: 10vh;
+  border: 10px solid #b93c59;
+}
+
+.player.blue {
+  top: 75vh;
+  border: 10px solid #3c83ba;
+}
+
+.player.goalman.blue {left: 45vw;}
+.player.center.red {left: 45vw;}
+.player.goalman.red {left: 60vw;}
+.player.center.blue {left: 60vw;}
+
+.player.other {
+  margin-top: 2vh;
+  left: 30vw;
+}
+
+.player.other.t4 {top: 60vh;}
+.player.other.t5 {top: 40vh;}
+.player.other.t6 {top: 20vh;}
+
+.player.loby {position: relative; float: left; width: 30vh; height: 30vh; line-height: 30vh; margin: 3vh; color: #aaa}
+.player.loby.active {color: #000; border-color: #000}
+
+.winner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 23;
+  background: rgba(255,255,255,0.8);
+  font-size: 6vh;
+  text-align: center;
+}
+
+.trophy {
+  font-size: 20vh;
+  margin-top: 30vh;
+  display: block;
+}

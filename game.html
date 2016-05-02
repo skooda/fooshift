@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="helpers.js"></script>
+    <script src="players.js"></script>
+    <script src="game.js"></script>
+    <title>FssOOShifst</title>
+  </head>
+  <body>
+    <a href="index.html" class="btn-reset">&#10005;</a>
+    <div class="foosball" id="foosball"></div>
+    <script>
+      var players=getActivePlayers();
+      game = new Game(players, "foosball");
+    </script>
+  </body>
+</html>
